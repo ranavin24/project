@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Employee Directory</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+  <header>
+
+    <button id="backBtn" class="back-button">⬅ Back</button>
+
+    <h1>Employee Directory</h1>
+
+    <div class="filters">
+
+      <input 
+
+        type="text" 
+
+        id="searchInput" 
+
+        placeholder="Search employees..." 
+
+        autocomplete="off" 
+
+        autocorrect="off" 
+
+        autocapitalize="off" 
+
+        spellcheck="false"
+
+      >
+
+      <select id="departmentFilter">
+
+        <option value="">All Departments</option>
+
+        <option value="HR">HR</option>
+
+        <option value="Finance">Finance</option>
+
+        <option value="IT">IT</option>
+
+        <option value="Marketing">Marketing</option>
+
+        <option value="Sales">Sales</option>
+
+        <option value="Support">Support</option>
+
+      </select>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+    <div class="employee-container" id="employeeContainer">
+
+      <!-- Employee Cards will be generated here by JS -->
+
+    </div>
+
+
+
+    <p id="noResults" style="display:none; text-align:center; margin-top:20px;">No employees found.</p>
+
+  </main>
+
+
+
+  <footer>
+
+    © 2025 Employee Directory | Made For NM Project
+
+  </footer>
+
+
+
+  <!-- Modal -->
+
+  <div id="employeeModal" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close-btn">&times;</span>
+
+      <img id="modalImage" src="" alt="Employee">
+
+      <h3 id="modalName"></h3>
+
+      <p id="modalDept"></p>
+
+      <p id="modalEmail"></p>
+
+      <p id="modalPhone"></p>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
