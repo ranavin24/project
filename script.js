@@ -82,7 +82,7 @@ const modal = document.getElementById("employeeModal");
 const closeBtn = document.querySelector(".close-btn");
 
 function openModal(emp, idx) {
-  document.getElementById("modalImage").src = https://i.pravatar.cc/150?img=${idx + 10};
+  document.getElementById("modalImage").src = `https://i.pravatar.cc/150?img=${idx + 10}`;
   document.getElementById("modalName").innerText = emp.name;
   document.getElementById("modalDept").innerText = emp.dept;
   document.getElementById("modalEmail").innerText = emp.email;
